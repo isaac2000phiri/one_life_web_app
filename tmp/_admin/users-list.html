@@ -1,0 +1,242 @@
+
+{% extends "base.html" %}
+{% include "bases.html" %}
+
+{% load static %}
+{% block title %}
+Dashboard
+{% endblock title %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                
+                <h4 class=""></h4>
+            </div>
+        </div>
+    </div>     
+    <!-- end page title --> 
+    <div class="row pt-2 px-2">
+        <div class="col-md-6 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="avatar-sm bg-soft-danger rounded">
+                                <i class="fe-aperture avatar-title font-22 text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <h3 class="text-dark my-1">$<span data-plugin="counterup">12,145</span></h3>
+                                <p class="text-muted mb-1 text-truncate">Income status</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6 class="text-uppercase">Target <span class="float-end">60%</span></h6>
+                        <div class="progress progress-sm m-0">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="visually-hidden">60% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-md-6 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="avatar-sm bg-soft-info rounded">
+                                <i class="fe-shopping-cart avatar-title font-22 text-info"></i>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <h3 class="text-dark my-1"><span data-plugin="counterup">1576</span></h3>
+                                <p class="text-muted mb-1 text-truncate">January's Sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6 class="text-uppercase">Target <span class="float-end">49%</span></h6>
+                        <div class="progress progress-sm m-0">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100" style="width: 49%">
+                                <span class="visually-hidden">49% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-md-6 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="avatar-sm bg-soft-warning rounded">
+                                <i class="fe-bar-chart-2 avatar-title font-22 text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <h3 class="text-dark my-1">$<span data-plugin="counterup">8947</span></h3>
+                                <p class="text-muted mb-1 text-truncate">Payouts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6 class="text-uppercase">Target <span class="float-end">18%</span></h6>
+                        <div class="progress progress-sm m-0">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width: 18%">
+                                <span class="visually-hidden">18% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+        <div class="col-md-6 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="avatar-sm bg-soft-dark rounded">
+                                <i class="fe-cpu avatar-title font-22 text-dark"></i>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <h3 class="text-dark my-1"><span data-plugin="counterup">178</span></h3>
+                                <p class="text-muted mb-1 text-truncate">Available Stores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6 class="text-uppercase">Target <span class="float-end">74%</span></h6>
+                        <div class="progress progress-sm m-0">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%">
+                                <span class="visually-hidden">74% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <!-- add anything-->
+                    </ol>
+                </div>
+                <h4 class="page-title">KYC</h4>
+            </div>
+        </div>
+    </div>
+        <!-- three cards -->
+        
+        <div class="row">
+            <div class="col-12"> 
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            
+                        </div>
+                        <div class="table-responsive">
+                                <table class="table table-centered table-nowrap table-striped" id="products-datatable">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20px;">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="customCheck1">
+                                                    <label class="form-check-label" for="customCheck1">&nbsp;</label>
+                                                </div>
+                                            </th>
+                                            <th>Customer</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Location</th>
+                                            <th>Create Date</th>
+                                            <th>Status</th>
+                                            <th style="width: 85px;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for obj in object_list  %}
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                    <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                                </div>
+                                            </td>
+                                            <td class="table-user">
+                                                <img src="{% static 'images/users/user-4.jpg' %}" alt="table-user" class="me-2 rounded-circle">
+                                                <a href="{{obj.get_absolute_url}}" class="text-body fw-semibold">{{obj.first_name}} {{obj.last_name}}</a>
+                                            </td>
+                                            <td>
+                                                {{obj.phone}}
+                                            </td>
+                                            <td>
+                                                {{obj.email}}
+                                            </td>
+                                            <td>
+                                                {{obj.province}}
+                                            </td>
+                                            <td>
+                                                {{obj.date_joined}}
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-soft-success text-success">{{obj.is_active}}</span>
+                                            </td>
+        
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+
+                            <ul class="pagination pagination-rounded justify-content-end mb-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                        <span class="visually-hidden">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end collapse-->
+                    </div> <!-- end card-body-->
+                </div> <!-- end card-->
+            </div> <!-- end col-->
+        </div>
+        <!-- end row -->
+        
+    </div> <!-- container -->
+
+{% endblock content %}
+    
